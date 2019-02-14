@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="date">
+    <div class="cur-date">
+      <div class="selected-date">
+        <span class="from-date-val"></span>
+        <span> - </span>
+        <span class="to-date-val"></span>
+      </div>
+      <img class="calendar-icon" src="calendar.png" alt="">
+    </div>
+    <div class="select-wrap custom-select">
+      <select name="period">
+        <option value="none"></option>
+        <option value="custom">Custom</option>
+        <option value="today">Today</option>
+        <option value="last_seven_days" selected>Last 7 days</option>
+        <option value="last_thirteen_days">Last 30 days</option>
+        <option value="last_nineteen_days">Last 90 days</option>
+      </select>
+    </div>
+    <div class="select-wrap custom-select">
+      <select name="timezone">
+        <option value="none" disabled>none</option>
+        <option value="timezone">Timezone</option>
+        <option value="timezone_cur" selected>Timezone: (GMT - 5:00) Eastern Time</option>
+      </select>
+    </div>
+    <div class="input-wrap">
+      <div class="input-item">
+        <label>From</label>
+        <input class="input-from" type="date" data-date="" data-date-format="MMMM DD, YY" value="2018-04-18">
+      </div>
+      <div class="input-item">
+        <label>To</label>
+        <input class="input-to" type="date" data-date="" data-date-format="MMMM DD, YY" value="2018-04-18">
+      </div>
+    </div>
+    <div class="button-wrap">
+      <button class="cancel">CANCEL</button>
+      <button class="apply">APPLY</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
